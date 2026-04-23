@@ -48,6 +48,27 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        'bg-primary': '#080C14',
+        'bg-secondary': '#0D1220',
+        'bg-tertiary': '#111827',
+        'accent-primary': '#38BDF8',
+        'accent-secondary': '#0EA5E9',
+        'accent-gold': '#D4A843',
+        'accent-coral': '#F97066',
+        'text-primary': '#F8FAFC',
+        'text-secondary': '#94A3B8',
+        'text-muted': '#475569',
+        'data-blue': '#38BDF8',
+        'data-cyan': '#22D3EE',
+        'data-indigo': '#818CF8',
+        'data-gold': '#D4A843',
+        'data-coral': '#F97066',
+        'data-green': '#34D399',
+      },
+      fontFamily: {
+        heading: ['Space Grotesk', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -58,6 +79,18 @@ module.exports = {
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      },
+      spacing: {
+        'xs': '8px',
+        'sm-space': '16px',
+        'md-space': '24px',
+        'lg-space': '48px',
+        'xl-space': '80px',
+        '2xl-space': '120px',
+        '3xl-space': '160px',
+      },
+      maxWidth: {
+        'container': '1280px',
       },
       keyframes: {
         "accordion-down": {
@@ -72,11 +105,26 @@ module.exports = {
           "0%,70%,100%": { opacity: "1" },
           "20%,50%": { opacity: "0" },
         },
+        "marquee": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "pulse-dot": {
+          "0%, 100%": { transform: "scale(1)", opacity: "0.8" },
+          "50%": { transform: "scale(1.3)", opacity: "0.3" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+        "marquee": "marquee 30s linear infinite",
+        "pulse-dot": "pulse-dot 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },
