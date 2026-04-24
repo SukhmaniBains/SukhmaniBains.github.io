@@ -177,4 +177,3 @@ That's the real power of a single source of truth. Not better reports. Better de
 
 ---
 
-*These narratives are dramatized composites drawn from patterns observed across multiple organizations and roles over a 12-year career. They reflect real business dynamics, frameworks, and lessons, but no single story corresponds to a single client engagement.*
