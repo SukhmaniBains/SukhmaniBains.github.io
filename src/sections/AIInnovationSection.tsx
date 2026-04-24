@@ -19,7 +19,7 @@ const capabilities = [
   {
     icon: Globe,
     title: 'Agentic Workflows',
-    description: 'Building autonomous AI agents that can perform data extraction, transformation, analysis, and reporting tasks — reducing manual work and accelerating decision cycles.',
+    description: 'Building autonomous AI agents that can perform data extraction, transformation, analysis, and reporting tasks, reducing manual work and accelerating decision cycles.',
   },
   {
     icon: Code2,
@@ -76,7 +76,7 @@ export default function AIInnovationSection() {
             The Next Frontier. Already Underway.
           </h2>
           <p className="text-body-lg mx-auto" style={{ color: '#94A3B8', maxWidth: '640px' }}>
-            I'm not waiting for AI to disrupt data leadership — I'm building the frameworks that put AI at the center of how enterprises think about their data.
+            I'm not waiting for AI to disrupt data leadership. I'm building the frameworks that put AI at the center of how enterprises think about their data.
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export default function AIInnovationSection() {
           <Sparkles size={24} style={{ color: '#D4A843', flexShrink: 0 }} />
           <div className="flex-1">
             <h4 className="text-h4 font-heading" style={{ color: '#F8FAFC', marginBottom: '4px' }}>
-              AI Projects Showcase — Coming Soon
+              AI Projects Showcase - Coming Soon
             </h4>
             <p className="text-body-sm" style={{ color: '#94A3B8' }}>
               Interactive demos of AI-powered analytics, LLM-integrated dashboards, and intelligent data agents.

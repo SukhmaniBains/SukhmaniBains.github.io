@@ -13,6 +13,7 @@ interface Role {
   bullets: string[];
   tags: string[];
   color: string;
+  logo: string;
 }
 
 const roles: Role[] = [
@@ -28,6 +29,7 @@ const roles: Role[] = [
     ],
     tags: ['Power BI', 'Fabric', 'SQL', 'Clari'],
     color: '#38BDF8',
+    logo: '/logo-aptean.svg',
   },
   {
     role: 'BI Architect',
@@ -41,6 +43,7 @@ const roles: Role[] = [
     ],
     tags: ['Fabric', 'SQL', 'Power BI'],
     color: '#D4A843',
+    logo: '/logo-millcreek.jpg',
   },
   {
     role: 'Director, Business Intelligence',
@@ -54,6 +57,7 @@ const roles: Role[] = [
     ],
     tags: ['Vena', 'Planful', 'Power BI', 'SQL'],
     color: '#38BDF8',
+    logo: '/logo-fortna.svg',
   },
   {
     role: 'Manager, BI & Data',
@@ -67,6 +71,7 @@ const roles: Role[] = [
     ],
     tags: ['SQL', 'SSIS', 'Power BI'],
     color: '#818CF8',
+    logo: '/logo-fortna.svg',
   },
   {
     role: 'Enterprise Data Architect',
@@ -79,6 +84,7 @@ const roles: Role[] = [
     ],
     tags: ['SQL', 'ETL', 'Data Modeling'],
     color: '#F97066',
+    logo: '/logo-fortna.svg',
   },
   {
     role: 'Senior BI Developer V',
@@ -91,6 +97,7 @@ const roles: Role[] = [
     ],
     tags: ['Snowflake', 'SQL', 'Oracle', 'DB2'],
     color: '#34D399',
+    logo: '/logo-floridablue.svg',
   },
 ];
 
@@ -224,12 +231,21 @@ export default function CareerSection() {
                 >
                   {/* Company badge */}
                   <div className="flex items-center justify-between" style={{ marginBottom: '12px' }}>
-                    <span
-                      className="text-label"
-                      style={{ color: role.color }}
-                    >
-                      {role.company}
-                    </span>
+                    <div className="flex items-center" style={{ gap: '10px' }}>
+                      <img
+                        src={role.logo}
+                        alt={role.company}
+                        style={{
+                          height: '28px',
+                          maxWidth: '100px',
+                          objectFit: 'contain',
+                          filter: 'brightness(0) invert(1)',
+                        }}
+                      />
+                      <span className="text-label hidden sm:inline" style={{ color: role.color }}>
+                        {role.company}
+                      </span>
+                    </div>
                     <span className="text-mono-sm font-mono" style={{ color: '#475569' }}>
                       {role.period}
                     </span>
@@ -317,7 +333,7 @@ export default function CareerSection() {
                     {r.role}
                   </span>
                   <span className="text-body-sm" style={{ color: '#475569', marginLeft: '8px' }}>
-                    — {r.company}
+                    - {r.company}
                   </span>
                 </div>
                 <span className="text-mono-sm font-mono" style={{ color: '#475569' }}>

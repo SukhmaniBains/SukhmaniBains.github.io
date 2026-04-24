@@ -80,7 +80,7 @@ export default function AboutSection() {
               }}
             />
             <img
-              src="/sukhmani-portrait.png"
+              src="/sukhmani-portrait.jpg"
               alt="Sukhmani Bains"
               style={{
                 borderRadius: '24px',
@@ -103,13 +103,13 @@ export default function AboutSection() {
             className="about-headline text-h2 font-heading"
             style={{ color: '#F8FAFC', maxWidth: '600px', marginBottom: '24px' }}
           >
-            I Don't Just Build Dashboards. I Build the Systems That Power Decisions.
+            Most Companies Have Data. Few Have Decision Systems. I Build Them.
           </h2>
           <p
             className="about-body text-body-lg"
             style={{ color: '#94A3B8', maxWidth: '600px', marginBottom: '28px', lineHeight: 1.7 }}
           >
-            For 12+ years, I've operated at the center of Sales, Finance, Marketing, and Operations — architecting the data infrastructure, reporting systems, and analytics frameworks that transform how enterprise leaders make decisions. From building $15B pipeline visibility systems to delivering $40M in interest savings through financial intelligence, I bridge the gap between raw data and boardroom strategy.
+            For 12+ years, I've operated at the center of Sales, Finance, Marketing, and Operations, architecting the data infrastructure, reporting systems, and analytics frameworks that transform how enterprise leaders make decisions. From building $15B pipeline visibility systems to delivering $40M in interest savings through financial intelligence, I bridge the gap between raw data and boardroom strategy.
           </p>
 
           {/* Pills */}

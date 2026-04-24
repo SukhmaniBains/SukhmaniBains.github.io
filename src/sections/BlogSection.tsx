@@ -14,13 +14,13 @@ const blogPosts = [
   },
   {
     title: 'From 15 Days to 5: Accelerating Financial Close',
-    description: 'The strategy and technology stack that cut month-end close by 67% while improving accuracy — and how to replicate it.',
+    description: 'The strategy and technology stack that cut month-end close by 67% while improving accuracy, and how to replicate it.',
     tag: 'FP&A',
     readTime: '6 min read',
   },
   {
     title: 'Why Every Data Leader Needs an AI Strategy in 2025',
-    description: 'How LLMs, agentic workflows, and MCP are reshaping what\'s possible in business intelligence — and how to get ahead.',
+    description: 'How LLMs, agentic workflows, and MCP are reshaping what\'s possible in business intelligence, and how to get ahead.',
     tag: 'AI & BI',
     readTime: '10 min read',
   },

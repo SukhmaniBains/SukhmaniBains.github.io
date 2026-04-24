@@ -16,21 +16,21 @@ const quadrants = [
   {
     icon: BarChart3,
     title: 'Financial Planning & Analysis',
-    description: 'I architect financial data systems that transform month-end close from a 15-day marathon into a 5-day sprint — with predictive foresight.',
+    description: 'I architect financial data systems that transform month-end close from a 15-day marathon into a 5-day sprint, with predictive foresight.',
     color: '#D4A843',
     capabilities: ['Budget vs. actual reporting', 'Cash flow forecasting', 'Financial consolidation', 'Board-ready executive dashboards'],
   },
   {
     icon: Target,
     title: 'Marketing Analytics & Attribution',
-    description: 'I connect marketing spend to revenue outcomes — building attribution models that prove ROI and optimize every dollar.',
+    description: 'I connect marketing spend to revenue outcomes, building attribution models that prove ROI and optimize every dollar.',
     color: '#F97066',
     capabilities: ['Campaign performance analytics', 'Attribution modeling', 'Customer acquisition cost analysis', 'Funnel optimization'],
   },
   {
     icon: Layers,
     title: 'Operations & Supply Chain Data',
-    description: 'I integrate operational data from ERP to warehouse floor — creating the single source of truth that keeps complex businesses moving.',
+    description: 'I integrate operational data from ERP to warehouse floor, creating the single source of truth that keeps complex businesses moving.',
     color: '#34D399',
     capabilities: ['ERP data integration', 'Inventory analytics', 'Operational KPI dashboards', 'Process automation'],
   },
@@ -79,7 +79,7 @@ export default function ExpertiseSection() {
             One Leader. Four Functions. Infinite Impact.
           </h2>
           <p className="text-body-lg mx-auto" style={{ color: '#94A3B8', maxWidth: '640px' }}>
-            I don't sit in a silo. I sit at the center — where data meets decision-making across every function that drives revenue.
+            I don't sit in a silo. I sit at the center, where data meets decision-making across every function that drives revenue.
           </p>
         </div>
 

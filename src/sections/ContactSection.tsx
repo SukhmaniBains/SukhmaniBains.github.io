@@ -75,7 +75,7 @@ export default function ContactSection() {
           className="contact-subtext text-body-lg"
           style={{ color: '#94A3B8', maxWidth: '600px', margin: '0 auto 40px' }}
         >
-          I'm currently exploring Head of Data, Director of BI, and Senior Director of Reporting & Analytics opportunities. If you're looking for a leader who can transform how your organization thinks about data — let's talk.
+          I'm currently exploring Head of Data, Director of BI, and Senior Director of Reporting & Analytics opportunities. If you're looking for a leader who can transform how your organization thinks about data, let's talk.
         </p>
 
         {/* CTA Buttons */}

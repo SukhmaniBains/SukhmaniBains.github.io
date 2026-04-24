@@ -7,11 +7,12 @@ import SkillsSection from '../sections/SkillsSection';
 import AIInnovationSection from '../sections/AIInnovationSection';
 import DashboardSection from '../sections/DashboardSection';
 import BlogSection from '../sections/BlogSection';
+import TestimonialsSection from '../sections/TestimonialsSection';
 import ContactSection from '../sections/ContactSection';
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroSection />
       <MetricsSection />
       <AboutSection />
@@ -21,7 +22,8 @@ export default function Home() {
       <AIInnovationSection />
       <DashboardSection />
       <BlogSection />
+      <TestimonialsSection />
       <ContactSection />
-    </>
+    </main>
   );
 }

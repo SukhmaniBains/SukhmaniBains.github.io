@@ -88,7 +88,7 @@ export default function DashboardSection() {
                 }}
               >
                 <h3 className="text-h3 font-heading" style={{ color: '#F8FAFC', marginBottom: '8px' }}>
-                  Interactive Gallery — Coming Soon
+                  Interactive Gallery - Coming Soon
                 </h3>
                 <p className="text-body-sm" style={{ color: '#94A3B8', marginBottom: '12px' }}>
                   Click-through executive dashboards with live drill-downs.

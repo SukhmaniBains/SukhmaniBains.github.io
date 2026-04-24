@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowUpRight, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, Download } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -230,20 +230,20 @@ export default function HeroSection() {
           padding: '120px var(--container-pad) 80px',
         }}
       >
-        <div className="overflow-hidden" style={{ marginBottom: '8px' }}>
+        <div className="overflow-hidden" style={{ marginBottom: '8px', whiteSpace: 'nowrap' }}>
           <div
             ref={headline1Ref}
             className="text-hero font-heading"
-            style={{ color: '#F8FAFC' }}
+            style={{ color: '#F8FAFC', whiteSpace: 'nowrap' }}
           >
             {splitChars('SUKHMANI BAINS')}
           </div>
         </div>
-        <div className="overflow-hidden" style={{ marginBottom: '24px' }}>
+        <div className="overflow-hidden" style={{ marginBottom: '24px', whiteSpace: 'nowrap' }}>
           <div
             ref={headline2Ref}
             className="text-hero font-heading"
-            style={{ color: '#38BDF8' }}
+            style={{ color: '#38BDF8', whiteSpace: 'nowrap' }}
           >
             {splitChars('DATA LEADER')}
           </div>
@@ -258,7 +258,7 @@ export default function HeroSection() {
             marginBottom: '40px',
           }}
         >
-          At the intersection of Sales, Finance, Marketing & Operations — turning data into $100M+ decisions.
+          Most Companies Have Data. Few Have Decision Systems. I Build Them.
         </p>
 
         <div
@@ -314,6 +314,31 @@ export default function HeroSection() {
           >
             Get In Touch
           </button>
+          <a
+            href="/SukhmaniBains_Resume.pdf"
+            download
+            className="inline-flex items-center gap-2 text-body-sm font-semibold uppercase"
+            style={{
+              backgroundColor: 'transparent',
+              color: '#D4A843',
+              border: '1px solid rgba(212,168,67,0.3)',
+              borderRadius: '8px',
+              padding: '14px 32px',
+              letterSpacing: '0.05em',
+              transition: 'all 0.25s cubic-bezier(0.4, 0, 0.2, 1)',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(212,168,67,0.08)';
+              (e.currentTarget as HTMLElement).style.borderColor = '#D4A843';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent';
+              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(212,168,67,0.3)';
+            }}
+          >
+            <Download size={16} />
+            Resume
+          </a>
         </div>
 
         {/* Scroll indicator */}
