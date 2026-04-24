@@ -1,7 +1,5 @@
 # The $40M Close: How One Dashboard Changed Everything
 
-*The following story is based on real professional experience. Company names, locations, and identifying details have been anonymized to protect confidentiality. The outcomes and lessons described are authentic.*
-
 ---
 
 ## The Monday Morning Meeting From Hell
@@ -179,4 +177,4 @@ That's the real power of a single source of truth. Not better reports. Better de
 
 ---
 
-*Sukhmani Bains is a data strategy leader who architects decision systems at the intersection of sales, finance, marketing, and operations. The stories shared here are based on real professional experiences, anonymized to protect client confidentiality.*
+*These narratives are dramatized composites drawn from patterns observed across multiple organizations and roles over a 12-year career. They reflect real business dynamics, frameworks, and lessons, but no single story corresponds to a single client engagement.*

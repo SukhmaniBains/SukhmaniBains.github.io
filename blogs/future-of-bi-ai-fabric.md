@@ -1,7 +1,5 @@
 # Why I Stopped Building Dashboards and Started Building Agents
 
-*A perspective on the future of business intelligence, drawn from 12 years of building decision systems and the emerging capabilities of AI.*
-
 ---
 
 ## The Dashboard That Nobody Asked For
@@ -153,4 +151,4 @@ The dashboard isn't dead. But its monopoly on business intelligence is over. The
 
 ---
 
-*Sukhmani Bains is a data strategy leader exploring the intersection of traditional BI, modern data architecture, and AI-powered analytics. He believes the future belongs to systems that don't just show data, but think about it.*
+*These narratives are dramatized composites drawn from patterns observed across multiple organizations and roles over a 12-year career. They reflect real business dynamics, frameworks, and lessons, but no single story corresponds to a single client engagement.*
