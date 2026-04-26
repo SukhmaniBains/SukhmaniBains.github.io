@@ -1,5 +1,7 @@
 # The Pipeline That Wasn't Real: A Revenue Intelligence Story
 
+*The following story is based on real professional experience. Company names, locations, and identifying details have been anonymized to protect confidentiality. The outcomes and lessons described are authentic.*
+
 ---
 
 ## The $2 Billion Mirage
@@ -208,6 +210,4 @@ If you're building revenue intelligence from scratch, here's my recommended sequ
 The $2.4 billion pipeline that wasn't real taught me that the most expensive thing in business isn't bad data — it's *confident decisions based on bad data.*
 
 Revenue intelligence exists to close that gap.
-
----
 

@@ -1,5 +1,7 @@
 # Why I Stopped Building Dashboards and Started Building Agents
 
+*A perspective on the future of business intelligence, drawn from 12 years of building decision systems and the emerging capabilities of AI.*
+
 ---
 
 ## The Dashboard That Nobody Asked For
@@ -148,6 +150,4 @@ If this resonates and you want to explore agentic analytics, here's my practical
 **Month 6+:** Scale to production with proper governance, monitoring, and human oversight. This is where enterprise readiness matters — security, access control, audit trails, and explainability.
 
 The dashboard isn't dead. But its monopoly on business intelligence is over. The age of the agent has begun.
-
----
 

@@ -1,5 +1,7 @@
 # The $40M Close: How One Dashboard Changed Everything
 
+*The following story is based on real professional experience. Company names, locations, and identifying details have been anonymized to protect confidentiality. The outcomes and lessons described are authentic.*
+
 ---
 
 ## The Monday Morning Meeting From Hell
@@ -174,6 +176,4 @@ If you're reading this because you're facing a similar challenge — multiple sy
 The $40 million didn't come from the technology. It came from a leadership team that finally had the confidence to act on what their own data was telling them.
 
 That's the real power of a single source of truth. Not better reports. Better decisions.
-
----
 
