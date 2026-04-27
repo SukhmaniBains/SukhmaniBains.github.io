@@ -1,38 +1,32 @@
 {
-  "disclaimer": "These stories are dramatized narratives pieced together from patterns observed across multiple organizations and roles over a 12-year career. While inspired by real business challenges, specific company names, timelines, and identifying details have been altered, composited, or fictionalized. Any resemblance to a single organization's situation is coincidental. The lessons and frameworks described reflect accumulated experience rather than a single engagement.",
+  "disclaimer": "These stories are dramatized narratives pieced together from patterns observed across multiple organizations and roles over a 12-year career. Names, company identifiers, and certain details have been altered or fictionalized to protect confidentiality while preserving the technical and strategic truth of what happened. Think of them as composite case studies told as stories, not journalism.",
   "posts": [
     {
       "slug": "building-a-single-source-of-truth",
       "title": "The $40M Close: How One Dashboard Changed Everything",
-      "subtitle": "When 15 days of chaos became 5 days of clarity",
-      "date": "2024-08-15",
-      "author": "Sukhmani Bains",
-      "readTime": "12 min read",
-      "tags": ["Data Architecture", "FP&A", "Leadership"],
-      "featured": true,
-      "excerpt": "A Fortune 500 logistics company was hemorrhaging cash because nobody could agree on the numbers. Five ERP systems. Fifteen days to close. And a leadership team making decisions based on spreadsheets that contradicted each other. Here's how we built a single source of truth and saved $40 million in interest payments."
-    },
-    {
-      "slug": "revenue-intelligence-from-funnel-to-forecast",
-      "title": "The Pipeline That Wasn't Real: A Revenue Intelligence Story",
-      "subtitle": "When $15B in pipeline visibility reveals what your CRM can't tell you",
-      "date": "2024-10-22",
-      "author": "Sukhmani Bains",
-      "readTime": "10 min read",
-      "tags": ["Revenue Intelligence", "Sales Analytics", "Forecasting"],
-      "featured": false,
-      "excerpt": "A global enterprise software company thought they had a clear picture of their sales pipeline. Their CRM said one thing. Their quarterly numbers said another. The gap between what leadership believed and what was actually happening was costing them millions in misallocated resources. This is the story of how we built the truth."
-    },
-    {
-      "slug": "future-of-bi-ai-fabric",
-      "title": "Why I Stopped Building Dashboards and Started Building Agents",
-      "subtitle": "The shift from reactive reporting to proactive intelligence",
-      "date": "2025-01-08",
-      "author": "Sukhmani Bains",
+      "description": "A story about building a real-time revenue intelligence system that gave a $2B company's leadership complete pipeline visibility, and the cultural resistance that almost killed it.",
+      "tag": "Data Architecture",
+      "date": "2024-12-15",
       "readTime": "8 min read",
-      "tags": ["AI", "Future of BI", "Innovation"],
-      "featured": false,
-      "excerpt": "After 12 years of building dashboards, I've realized something uncomfortable: most dashboards are graveyards of curiosity. They answer questions people stopped asking weeks ago. The future belongs to agents that anticipate what you need to know before you know you need to know it. Here's why I'm betting everything on AI-powered analytics."
+      "featured": true
+    },
+    {
+      "slug": "from-15-days-to-5",
+      "title": "The Pipeline That Wasn't Real: A Revenue Intelligence Story",
+      "description": "How I discovered that $300M in forecasted pipeline had no underlying data foundation, and what it took to rebuild trust between Sales and Finance.",
+      "tag": "FP&A",
+      "date": "2024-11-20",
+      "readTime": "6 min read",
+      "featured": false
+    },
+    {
+      "slug": "why-every-data-leader-needs-an-ai-strategy",
+      "title": "Why I Stopped Building Dashboards and Started Building Agents",
+      "description": "The shift from reactive reporting to proactive intelligence: how LLMs and agentic workflows are reshaping what business intelligence means in 2025.",
+      "tag": "AI & BI",
+      "date": "2025-01-10",
+      "readTime": "10 min read",
+      "featured": false
     }
   ]
 }
