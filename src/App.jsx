@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import BlogListPage from './pages/BlogListPage';
 import BlogPostPage from './pages/BlogPostPage';
 import AIDemoPage from './pages/AIDemoPage';
+import NLToSQLPage from './pages/NLToSQLPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/blog" element={<BlogListPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/ai-demo" element={<AIDemoPage />} />
+          <Route path="/nl-to-sql" element={<NLToSQLPage />} />
         </Routes>
         <Footer />
       </div>

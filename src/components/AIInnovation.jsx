@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Brain, FileText, Workflow, Plug, ArrowRight, Sparkles } from 'lucide-react';
+import { Brain, FileText, Workflow, Plug, ArrowRight, Sparkles, Database } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const capabilities = [
@@ -27,6 +27,27 @@ const capabilities = [
     title: 'MCP & Integration',
     description: 'Exploring Model Context Protocol (MCP) server concepts for secure, structured integration between AI systems and enterprise data platforms.',
     icon: Plug
+  }
+];
+
+const demos = [
+  {
+    id: 'sentiment',
+    title: 'AI Sentiment Analysis Dashboard',
+    description: 'An interactive browser-based demo that analyzes text sentiment in real-time using AI - no backend required.',
+    tags: ['Transformers.js', 'NLP', 'Interactive'],
+    icon: Sparkles,
+    to: '/ai-demo',
+    accent: 'accent-blue'
+  },
+  {
+    id: 'nl2sql',
+    title: 'Natural Language to SQL',
+    description: 'Type business questions in plain English and see AI-generated SQL queries with schema-aware mock execution.',
+    tags: ['Text-to-SQL', 'Schema Parsing', 'Interactive'],
+    icon: Database,
+    to: '/nl-to-sql',
+    accent: 'accent-emerald'
   }
 ];
 
@@ -71,46 +92,56 @@ const AIInnovation = () => {
             })}
           </div>
 
-          {/* AI Projects Showcase Card */}
-          <AnimatedSection delay={0.2}>
-            <motion.div
-              whileHover={{ y: -4, scale: 1.01 }}
-              transition={{ duration: 0.3 }}
-              className="card h-full relative overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent-blue/10 to-transparent rounded-bl-full" />
+          {/* Demo Cards */}
+          <div className="space-y-4">
+            {demos.map((demo, index) => {
+              const IconComponent = demo.icon;
+              const accentClass = demo.accent === 'accent-emerald' ? 'text-accent-emerald' : 'text-accent-blue';
+              const bgClass = demo.accent === 'accent-emerald' ? 'bg-accent-emerald/10' : 'bg-accent-blue/10';
 
-              <div className="flex items-center gap-2 mb-4">
-                <Sparkles size={18} className="text-accent-blue" />
-                <span className="font-mono text-xs text-accent-blue tracking-wider uppercase">
-                  Featured Demo
-                </span>
-              </div>
+              return (
+                <AnimatedSection key={demo.id} delay={0.2 + index * 0.1}>
+                  <motion.div
+                    whileHover={{ y: -4, scale: 1.01 }}
+                    transition={{ duration: 0.3 }}
+                    className="card h-full relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent-blue/10 to-transparent rounded-bl-full" />
 
-              <h3 className="font-heading font-bold text-xl text-text-primary mb-3">
-                AI Sentiment Analysis Dashboard
-              </h3>
-              <p className="text-text-secondary text-sm mb-4 leading-relaxed">
-                An interactive browser-based demo that analyzes text sentiment in real-time using AI - no backend required.
-              </p>
+                    <div className="flex items-center gap-2 mb-4">
+                      <IconComponent size={18} className={accentClass} />
+                      <span className={`font-mono text-xs ${accentClass} tracking-wider uppercase`}>
+                        Featured Demo
+                      </span>
+                    </div>
 
-              <div className="flex flex-wrap gap-2 mb-6">
-                {['Transformers.js', 'NLP', 'Interactive'].map((tag) => (
-                  <span key={tag} className="tag-pill text-[10px]">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+                    <h3 className="font-heading font-bold text-xl text-text-primary mb-3">
+                      {demo.title}
+                    </h3>
+                    <p className="text-text-secondary text-sm mb-4 leading-relaxed">
+                      {demo.description}
+                    </p>
 
-              <Link
-                to="/ai-demo"
-                className="btn-primary text-sm inline-flex items-center gap-2 group"
-              >
-                Try the Demo
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </motion.div>
-          </AnimatedSection>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {demo.tags.map((tag) => (
+                        <span key={tag} className={`tag-pill text-[10px] ${bgClass} ${accentClass}`}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <Link
+                      to={demo.to}
+                      className="btn-primary text-sm inline-flex items-center gap-2 group"
+                    >
+                      Try the Demo
+                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </motion.div>
+                </AnimatedSection>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
