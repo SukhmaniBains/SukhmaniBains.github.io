@@ -111,7 +111,7 @@ const Hero = () => {
               transition={{ delay: 1.5 }}
               className="max-w-3xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary leading-relaxed mb-8 sm:mb-10"
             >
-              At the intersection of Sales, Finance, Marketing & Operations — turning data into $100M+ decisions.
+              At the intersection of Sales, Finance, Marketing & Operations - turning data into $100M+ decisions.
             </motion.p>
 
             {/* CTA Buttons */}

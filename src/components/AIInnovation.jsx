@@ -19,7 +19,7 @@ const capabilities = [
   {
     id: 3,
     title: 'Agentic Workflows',
-    description: 'Building autonomous AI agents that can perform data extraction, transformation, analysis, and reporting tasks — reducing manual work and accelerating decision cycles.',
+    description: 'Building autonomous AI agents that can perform data extraction, transformation, analysis, and reporting tasks - reducing manual work and accelerating decision cycles.',
     icon: Workflow
   },
   {
@@ -40,7 +40,7 @@ const AIInnovation = () => {
             The Next Frontier. Already Underway.
           </h2>
           <p className="text-text-secondary text-lg max-w-3xl mx-auto">
-            I'm not waiting for AI to disrupt data leadership — I'm building the frameworks that put AI at the center of how enterprises think about their data.
+            I'm not waiting for AI to disrupt data leadership - I'm building the frameworks that put AI at the center of how enterprises think about their data.
           </p>
         </AnimatedSection>
 
@@ -91,7 +91,7 @@ const AIInnovation = () => {
                 AI Sentiment Analysis Dashboard
               </h3>
               <p className="text-text-secondary text-sm mb-4 leading-relaxed">
-                An interactive browser-based demo that analyzes text sentiment in real-time using AI — no backend required.
+                An interactive browser-based demo that analyzes text sentiment in real-time using AI - no backend required.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6">

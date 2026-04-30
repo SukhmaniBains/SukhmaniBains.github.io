@@ -25,7 +25,7 @@ const Contact = () => {
           </h2>
 
           <p className="text-text-secondary text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            I'm currently exploring Head of Data, Director of BI, and Senior Director of Reporting & Analytics opportunities. If you're looking for a leader who can transform how your organization thinks about data — let's talk.
+            I'm currently exploring Head of Data, Director of BI, and Senior Director of Reporting & Analytics opportunities. If you're looking for a leader who can transform how your organization thinks about data - let's talk.
           </p>
 
           {/* Buttons */}

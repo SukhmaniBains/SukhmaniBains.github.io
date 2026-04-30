@@ -309,14 +309,14 @@ const AIDemoPage = () => {
             AI Sentiment Analysis Dashboard
           </h1>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto mb-6">
-            Real-time NLP powered by Transformers.js. Analyze any text to detect sentiment — completely in your browser.
+            Real-time NLP powered by Transformers.js. Analyze any text to detect sentiment - completely in your browser.
           </p>
 
           {/* Privacy Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-emerald/10 border border-accent-emerald/30">
             <Shield size={16} className="text-accent-emerald" />
             <span className="text-accent-emerald text-sm font-medium">
-              100% Private — All analysis runs in your browser
+              100% Private - All analysis runs in your browser
             </span>
           </div>
         </AnimatedSection>

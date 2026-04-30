@@ -20,7 +20,7 @@ const Expertise = () => {
             One Leader. Four Functions. Infinite Impact.
           </h2>
           <p className="text-text-secondary text-lg max-w-3xl mx-auto">
-            I don't sit in a silo. I sit at the center — where data meets decision-making across every function that drives revenue.
+            I don't sit in a silo. I sit at the center - where data meets decision-making across every function that drives revenue.
           </p>
         </AnimatedSection>
 

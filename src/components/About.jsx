@@ -57,7 +57,7 @@ const About = () => {
                 I Don't Just Build Dashboards. I Build the Systems That Power Decisions.
               </h2>
               <p className="text-text-secondary text-base md:text-lg leading-relaxed mb-8">
-                For 12+ years, I've operated at the center of Sales, Finance, Marketing, and Operations — architecting the data infrastructure, reporting systems, and analytics frameworks that transform how enterprise leaders make decisions. From building $15B pipeline visibility systems to delivering $40M in interest savings through financial intelligence, I bridge the gap between raw data and boardroom strategy.
+                For 12+ years, I've operated at the center of Sales, Finance, Marketing, and Operations - architecting the data infrastructure, reporting systems, and analytics frameworks that transform how enterprise leaders make decisions. From building $15B pipeline visibility systems to delivering $40M in interest savings through financial intelligence, I bridge the gap between raw data and boardroom strategy.
               </p>
 
               {/* Pills */}

@@ -108,6 +108,24 @@ const Career = () => {
                 </AnimatedSection>
               );
             })}
+
+            {/* Previous Roles Note */}
+            <AnimatedSection delay={0.7}>
+              <div className="flex justify-center mt-8 lg:mt-12">
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="text-center px-6 py-4 rounded-xl border border-border-color bg-bg-secondary/50 max-w-2xl"
+                >
+                  <p className="text-text-muted text-sm leading-relaxed">
+                    <span className="text-accent-gold font-medium">Previous Roles (2012 - 2018)</span>
+                    {' - '}include BI Developer, Data Analyst, and Reporting Specialist positions across healthcare and logistics, building the foundation in SQL, SSRS, and enterprise data warehousing.
+                  </p>
+                </motion.div>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </div>
