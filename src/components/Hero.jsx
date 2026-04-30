@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Download } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 
 const Hero = () => {
@@ -79,13 +79,13 @@ const Hero = () => {
               variants={container}
               initial="hidden"
               animate="visible"
-              className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight text-text-primary mb-6"
+              className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-[80px] font-bold tracking-tight text-text-primary mb-6"
             >
               {titleLetters.map((letter, index) => (
                 <motion.span
                   key={index}
                   variants={letterAnimation}
-                  className={letter === ' ' ? 'mr-2 sm:mr-4' : 'inline-block'}
+                  className={letter === ' ' ? 'mr-1 sm:mr-2 md:mr-4' : 'inline-block'}
                 >
                   {letter === ' ' ? '\u00A0' : letter}
                 </motion.span>
@@ -98,7 +98,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               transition={{ delay: 1.2 }}
-              className="font-heading text-xl sm:text-2xl md:text-3xl font-semibold text-accent-blue tracking-wide mb-8"
+              className="font-heading text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-accent-blue tracking-wide mb-6 sm:mb-8"
             >
               DATA LEADER
             </motion.p>
@@ -109,7 +109,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               transition={{ delay: 1.5 }}
-              className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-text-secondary leading-relaxed mb-10"
+              className="max-w-3xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary leading-relaxed mb-8 sm:mb-10"
             >
               At the intersection of Sales, Finance, Marketing & Operations — turning data into $100M+ decisions.
             </motion.p>
@@ -120,7 +120,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               transition={{ delay: 1.8 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
             >
               <button onClick={scrollToImpact} className="btn-primary w-full sm:w-auto">
                 View My Impact
@@ -128,6 +128,14 @@ const Hero = () => {
               <button onClick={scrollToContact} className="btn-outline w-full sm:w-auto">
                 Get In Touch
               </button>
+              <a
+                href="/Sukhmani_Bains_Resume.pdf"
+                download
+                className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-2"
+              >
+                <Download size={16} />
+                Resume
+              </a>
             </motion.div>
           </>
         )}

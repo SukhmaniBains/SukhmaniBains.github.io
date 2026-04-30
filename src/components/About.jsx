@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const About = () => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const pills = ['SALES', 'FINANCE', 'MARKETING', 'OPERATIONS'];
 
   const scrollToCareer = () => {
@@ -26,18 +29,21 @@ const About = () => {
               className="relative"
             >
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-bg-secondary border border-border-color">
-                <img
-                  src="/images/sukhmani-portrait.jpg"
-                  alt="Sukhmani Bains - Data Strategy Leader"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-                {/* Fallback gradient if image fails */}
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/20 to-accent-emerald/10 flex items-center justify-center">
-                  <span className="font-heading text-6xl font-bold text-accent-blue/30">SB</span>
-                </div>
+                {!imgError && (
+                  <img
+                    src="/images/sukhmani-portrait.jpg"
+                    alt="Sukhmani Bains - Data Strategy Leader"
+                    className={`w-full h-full object-cover relative z-10 transition-opacity duration-500 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    onLoad={() => setImgLoaded(true)}
+                    onError={() => setImgError(true)}
+                  />
+                )}
+                {/* Fallback: only show when image fails or hasn't loaded */}
+                {(!imgLoaded || imgError) && (
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/20 to-accent-emerald/10 flex items-center justify-center z-0">
+                    <span className="font-heading text-6xl font-bold text-accent-blue/30">SB</span>
+                  </div>
+                )}
               </div>
               {/* Decorative element */}
               <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-accent-blue/20 rounded-2xl -z-10" />

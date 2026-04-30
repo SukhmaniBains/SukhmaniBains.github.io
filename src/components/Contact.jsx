@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin } from 'lucide-react';
+import { Mail, Phone, Linkedin, Download } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const Contact = () => {
@@ -29,22 +29,30 @@ const Contact = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12">
             <a
               href="https://linkedin.com/in/sukhmanibains"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary w-full sm:w-auto"
+              className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2"
             >
               <Linkedin size={18} />
               Connect on LinkedIn
             </a>
             <a
               href="mailto:sukh93@yahoo.com"
-              className="btn-outline w-full sm:w-auto"
+              className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-2"
             >
               <Mail size={18} />
               Send an Email
+            </a>
+            <a
+              href="/Sukhmani_Bains_Resume.pdf"
+              download
+              className="btn-outline w-full sm:w-auto inline-flex items-center justify-center gap-2"
+            >
+              <Download size={18} />
+              Download Resume
             </a>
           </div>
 
