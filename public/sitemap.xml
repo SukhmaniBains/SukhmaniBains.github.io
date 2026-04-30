@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://sukhmanibains.github.io/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sukhmanibains.github.io/images/sukhmani-portrait.jpg</image:loc>
+      <image:title>Sukhmani Bains - Data Strategy Leader</image:title>
+      <image:caption>Portrait of Sukhmani Bains, Data Strategy Leader specializing in Power BI, Microsoft Fabric, and enterprise data architecture</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://sukhmanibains.github.io/#/blog</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AI Demo -->
+  <url>
+    <loc>https://sukhmanibains.github.io/#/ai-demo</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sukhmanibains.github.io/images/ai-visualization.jpg</image:loc>
+      <image:title>AI Sentiment Analysis Dashboard</image:title>
+      <image:caption>Interactive browser-based NLP demo powered by Transformers.js</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Building Pipeline Visibility -->
+  <url>
+    <loc>https://sukhmanibains.github.io/#/blog/building-a-single-source-of-truth</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://sukhmanibains.github.io/images/dashboard-preview.jpg</image:loc>
+      <image:title>$15B Pipeline Visibility System</image:title>
+      <image:caption>Executive dashboard for $15B pipeline visibility built with Power BI and Microsoft Fabric</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Post: Financial Close Acceleration -->
+  <url>
+    <loc>https://sukhmanibains.github.io/#/blog/from-15-days-to-5</loc>
+    <lastmod>2026-04-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: AI Strategy -->
+  <url>
+    <loc>https://sukhmanibains.github.io/#/blog/why-every-data-leader-needs-an-ai-strategy</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://sukhmanibains.github.io/images/ai-visualization.jpg</image:loc>
+      <image:title>AI Strategy for Data Leaders 2025</image:title>
+      <image:caption>How LLMs, agentic workflows, and MCP are reshaping business intelligence</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

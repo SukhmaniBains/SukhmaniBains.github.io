@@ -1,0 +1,44 @@
+# robots.txt for Sukhmani Bains Portfolio
+# https://sukhmanibains.github.io/
+# Last updated: 2026-05-01
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sukhmanibains.github.io/sitemap.xml
+
+# Crawl rate suggestions
+Crawl-delay: 1
+
+# Block specific paths (none currently blocked)
+# Disallow: /private/
+
+# Allow all search engines full access
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# LinkedIn Bot (for link preview cards)
+User-agent: LinkedInBot
+Allow: /
+
+# Twitter/X Bot (for card previews)
+User-agent: Twitterbot
+Allow: /
+
+# Facebook Bot (for OG tags)
+User-agent: facebookexternalhit
+Allow: /
+
+# Apple Messages
+User-agent: Applebot
+Allow: /

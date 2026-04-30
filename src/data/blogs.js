@@ -1,13 +1,18 @@
-export const blogPosts = [
+export const posts = [
   {
     id: 1,
-    slug: "building-the-15b-pipeline-visibility-system",
+    slug: "building-a-single-source-of-truth",
     title: "Building the $15B Pipeline Visibility System",
-    category: "Data Architecture",
-    date: "March 15, 2024",
+    tag: "Data Architecture",
+    keywords: "pipeline visibility, medallion architecture, Power BI, Microsoft Fabric, revenue intelligence, single source of truth, CRM analytics, data warehouse, enterprise data",
+    ogImage: "/images/dashboard-preview.jpg",
+    date: "2026-04-15",
+    displayDate: "March 15, 2024",
     readTime: "8 min read",
-    excerpt: "How I architected a medallion data platform that gave a $2B revenue company's board real-time visibility into every dollar in the pipeline.",
-    content: `# The $40M Close: How One Dashboard Changed Everything
+    featured: true,
+    description: "How I architected a medallion data platform that gave a $2B revenue company's board real-time visibility into every dollar in the pipeline.",
+    content: `
+# The $40M Close: How One Dashboard Changed Everything
 
 **Setting the scene:** A multibillion-dollar enterprise with a direct sales force spread across three continents, selling into a market that had just experienced a demand shock. The CEO needed to know, with absolute certainty, what was actually in the pipeline. Not what reps said was in the pipeline. Not what the CRM claimed. What was *actually* there, backed by signals.
 
@@ -61,17 +66,23 @@ Forecast variance dropped from 40% to under 12% in the first full quarter after 
 
 But the number that mattered more to me: for the first time in years, Sales and Finance presented the same forecast number in the same meeting. And both teams believed it.
 
-That is what a single source of truth is supposed to do. Not just aggregate data. But restore the organization's ability to trust itself.`
+That is what a single source of truth is supposed to do. Not just aggregate data. But restore the organization's ability to trust itself.
+    `
   },
   {
     id: 2,
-    slug: "from-15-days-to-5-accelerating-financial-close",
+    slug: "from-15-days-to-5",
     title: "From 15 Days to 5: Accelerating Financial Close",
-    category: "FP&A",
-    date: "February 3, 2024",
+    tag: "FP&A",
+    keywords: "financial close acceleration, month-end close, FP&A automation, Vena, Planful, financial consolidation, reporting automation, ERP integration",
+    ogImage: "/images/dashboard-preview.jpg",
+    date: "2026-04-10",
+    displayDate: "February 3, 2024",
     readTime: "6 min read",
-    excerpt: "The strategy and technology stack that cut month-end close by 67% while improving accuracy, and how to replicate it.",
-    content: `# The Pipeline That Wasn't Real: A Revenue Intelligence Story
+    featured: true,
+    description: "The strategy and technology stack that cut month-end close by 67% while improving accuracy, and how to replicate it.",
+    content: `
+# The Pipeline That Wasn't Real: A Revenue Intelligence Story
 
 **The setup:** A fast-growing enterprise with an aggressive sales culture, a recently implemented CRM, and a leadership team that loved dashboards. The problem: the dashboards were beautiful fiction.
 
@@ -130,17 +141,23 @@ If your data system can be gamed, it will be gamed. Not because your people are 
 
 The job of a data leader is not to build better reports. It is to build systems that make gaming more expensive than honesty. That means designing metrics that are hard to fake, signals that are hard to manufacture, and consequences that flow directly from the evidence.
 
-The pipeline was never real. The question was whether anyone wanted to know.`
+The pipeline was never real. The question was whether anyone wanted to know.
+    `
   },
   {
     id: 3,
     slug: "why-every-data-leader-needs-an-ai-strategy",
     title: "Why Every Data Leader Needs an AI Strategy in 2025",
-    category: "AI & BI",
-    date: "January 10, 2025",
+    tag: "AI & BI",
+    keywords: "AI strategy data leader, LLM business intelligence, agentic workflows, MCP, AI data architecture, AI dashboard, future of BI, LLM analytics, AI-powered reporting",
+    ogImage: "/images/ai-visualization.jpg",
+    date: "2026-04-01",
+    displayDate: "January 10, 2025",
     readTime: "10 min read",
-    excerpt: "How LLMs, agentic workflows, and MCP are reshaping what's possible in business intelligence, and how to get ahead.",
-    content: `# Why I Stopped Building Dashboards and Started Building Agents
+    featured: true,
+    description: "How LLMs, agentic workflows, and MCP are reshaping what's possible in business intelligence, and how to get ahead.",
+    content: `
+# Why I Stopped Building Dashboards and Started Building Agents
 
 **The context:** After twelve years building business intelligence systems for enterprise companies, I reached a point where I started asking a different question. Not "How do we visualize the data better?" but "How do we remove the need for humans to look at dashboards at all?"
 
@@ -212,9 +229,13 @@ It is "How do we make our dashboards unnecessary?"
 
 Not by eliminating transparency. But by encoding it into systems that act on what they see. Systems that know what matters, know what to do, and know how to learn from what happens next.
 
-That is the future of business intelligence. And it is closer than most organizations think.`
+That is the future of business intelligence. And it is closer than most organizations think.
+    `
   }
 ];
+
+// Alias for backward compatibility with existing imports
+export const blogPosts = posts;
 
 export const blogDisclaimer = `**Disclaimer:** The views expressed in this article are my own and do not necessarily reflect the views of any past or current employer. The case studies, projects, and metrics discussed represent my personal experience and professional perspective on data leadership, business intelligence, and technology strategy.
 
