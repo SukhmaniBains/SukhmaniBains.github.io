@@ -15,7 +15,7 @@ const Career = () => {
         </AnimatedSection>
 
         {/* Timeline */}
-        <div className="relative">
+        <div className="relative mb-12 lg:mb-16">
           {/* Vertical line - hidden on mobile */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-border-color -translate-x-1/2" />
 
@@ -108,26 +108,26 @@ const Career = () => {
                 </AnimatedSection>
               );
             })}
-
-            {/* Previous Roles Note */}
-            <AnimatedSection delay={0.7}>
-              <div className="flex justify-center mt-8 lg:mt-12">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 }}
-                  className="text-center px-6 py-4 rounded-xl border border-border-color bg-bg-secondary/50 max-w-2xl"
-                >
-                  <p className="text-text-muted text-sm leading-relaxed">
-                    <span className="text-accent-gold font-medium">Previous Roles (2012 - 2018)</span>
-                    {' - '}include BI Developer, Data Analyst, and Reporting Specialist positions across healthcare and logistics, building the foundation in SQL, SSRS, and enterprise data warehousing.
-                  </p>
-                </motion.div>
-              </div>
-            </AnimatedSection>
           </div>
         </div>
+
+        {/* Previous Roles Note - Outside timeline so line doesn't go through it */}
+        <AnimatedSection>
+          <div className="flex justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="text-center px-8 py-5 rounded-xl border border-border-color bg-bg-secondary/50 max-w-2xl"
+            >
+              <p className="text-text-secondary text-sm leading-relaxed">
+                <span className="text-accent-gold font-semibold">Earlier Career (2012 - 2018)</span>
+                {' - '}BI Developer, Data Analyst, and Reporting Specialist roles across healthcare and logistics — building the SQL, SSRS, and enterprise data warehousing foundation.
+              </p>
+            </motion.div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );
